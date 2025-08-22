@@ -74,3 +74,17 @@ Suggestions and collaborations are more than welcome.🙂 Please open an issue o
 Video tutorials of data scientists working through the above exercises:
 
 [Data Talks - Pandas Learning By Doing](https://www.youtube.com/watch?v=pu3IpU937xs&list=PLgJhDSE2ZLxaY_DigHeiIDC1cD09rXgJv)
+
+
+# Dev
+## Docker
+
+```bash
+docker build -t han3zeng/pandas-exercise .
+```
+```bash
+docker run --rm -it \
+    -p 8888:8888 \
+    -v "$PWD/src":/usr/local/app/src \
+    han3zeng/pandas-exercise
+```
